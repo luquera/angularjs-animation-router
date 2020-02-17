@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="page">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="#film">Film</a></li>
+            <li><a href="#contest">Contest</a></li>
+            <li><a href="#/">Start</a></li>
+        </ul>
+
+        <div ng-controller="siteController" id="main_wrapper" class="{{animDir}}">
+            <div id="content_wrapper" class="content {{pageClass}} page slide" ng-view></div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-animate.min.js"></script>
+        <script src="scripts/action.js"></script>
+    </body>
+
+</html>
